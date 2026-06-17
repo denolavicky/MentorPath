@@ -203,7 +203,7 @@ export default function LoginPage() {
           </div>
 
           {/* Google button */}
-          <a href="http://localhost:5000/api/auth/google" style={{
+          <a href={`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/auth/google`} style={{
             display: "flex", alignItems: "center", justifyContent: "center", gap: "12px",
             padding: "13px", borderRadius: "12px", border: "2px solid #e5e7eb",
             background: "white", textDecoration: "none", color: "#374151",
