@@ -75,7 +75,7 @@ export default function App() {
         <Route path="/forgot-password"  element={<ForgotPassword />} />
         <Route path="/reset-password"   element={<ResetPassword />} />
         <Route path="/terms"            element={<TermsPage />} />
-        <Route path="/privacy"          element={<PrivacyPage />} />
+        <Route path="/privacy"           element={<PrivacyPage />} />
 
         {/* ── MENTEE ── */}
         <Route path="/dashboard"        element={<PrivateRoute><MenteeDashboard /></PrivateRoute>} />
@@ -123,5 +123,11 @@ export default function App() {
 
       </Routes>
     </BrowserRouter>
+   
+    // <footer style={{ backgroundColor: "#f3f4f6", padding: "20px", textAlign: "center" }}>
+    //   <p style={{ color: "#6b7280", fontSize: "14px" }}>
+    //     &copy; 2023 MentorPath. All rights reserved.
+    //   </p>
+    // </footer>
   );
 }
